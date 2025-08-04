@@ -97,3 +97,14 @@
   overflow: visible !important;
 
 }
+
+/* 🌈 Dark semi-transparent background for stacked bars */
+.stackedBars__74017 {
+    background-color: rgba(9, 13, 15, 0.345) !important;
+}
+
+/* 🎨 Same background for option pills */
+.optionPillKey__1464f {
+    background-color: rgba(9, 13, 15, 0.345) !important;
+}
+
