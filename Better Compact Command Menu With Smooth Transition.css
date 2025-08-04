@@ -108,3 +108,18 @@
     background-color: rgba(9, 13, 15, 0.345) !important;
 }
 
+/* 🏷️ Semi-transparent header background with compact styling */
+.contentTitle__13533 {
+    background: rgba(11, 6, 29, 0.334) !important;
+    padding: 4px 8px !important;
+    border-radius: 7px !important;
+    display: inline-block !important; /* Prevents full-width background */
+    margin-left: 8px !important; /* ↔️ Adds left spacing */
+}
+
+/* ✨ Force white text for default color classes (improves readability) */
+.defaultColor__4bd52, .defaultColor__5345c {
+    color: rgba(255, 255, 255, 0.885) !important;
+}
+
+
