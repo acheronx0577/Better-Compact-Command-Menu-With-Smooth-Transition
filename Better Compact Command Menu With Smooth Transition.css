@@ -122,4 +122,91 @@
     color: rgba(255, 255, 255, 0.885) !important;
 }
 
+/* 🎪 Autocomplete Container */
+.autocomplete__13533.autocomplete__6b0e0 {
+  max-height: 310px !important;
+  width: 500px !important;
+  border-radius: 13px;
+}
+
+/* 🖱️ Clickable Row (Base) */
+.clickable__13533.autocompleteRowVertical__13533 {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-clip-path: inset(0 7px 0 7px round 9px);
+  clip-path: inset(0 7px 0 7px round 9px);
+  transform: translateZ(0);
+  transition: 
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* 📦 Inner Wrapper */
+.wrapper__920ab {
+  padding: 1px 8px !important;
+}
+
+/* ✨ Gradient Overlay (Pseudo-element) */
+.clickable__13533.autocompleteRowVertical__13533::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 round 1px);
+  transition: 
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* 🌈 Hover Effects */
+.clickable__13533.autocompleteRowVertical__13533:hover {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+  box-shadow: 
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Gradient on Hover */
+.clickable__13533.autocompleteRowVertical__13533:hover::before {
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+/* ⚪ White Text on Hover/Selection */
+.clickable__13533.autocompleteRowVertical__13533:hover .title__920ab,
+.clickable__13533.autocompleteRowVertical__13533:hover .description__920ab,
+.clickable__13533.autocompleteRowVertical__13533:hover .source__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .title__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .description__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .source__920ab {
+  color: white !important;
+}
+
+/* 🎯 Selected State */
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+}
+
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"]::before {
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
 
