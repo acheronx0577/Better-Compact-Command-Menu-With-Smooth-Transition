@@ -25,9 +25,11 @@
 }
 
 /* 🖱️ Scrollable area positioning */
-.scroller_affa7e.list_d1405b {
-  top: 4px;
-  right: 3px;
+.scroller_affa7e:not(.videoGrid_a21736) {
+top: 4px;
+right: 3px;
+display: block !important;
+visibility: visible !important;
 }
 
 /* 🌀 Animated item wrapper with cool effects */
@@ -209,4 +211,5 @@
     rgba(87, 45, 133, 0.8) 100%
   );
 }
+
 
